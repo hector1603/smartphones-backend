@@ -1,0 +1,20 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "root",
+    "database": "smartphones_catalog",
+    "entities": ["dist/**/*.entity{.ts,.js}", "src/**/*.entity{.ts,.js}"],
+    "synchronize": false,
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "migrationsTableName": "migrations_history",
+    "migrationsRun": true,
+    "ssl": true,
+    "extra": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+  
