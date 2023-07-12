@@ -13,9 +13,9 @@ import { UsersModule } from './users/users.module';
     AuthModule,
     UsersModule,
     SmartphonesModule,
-    JwtModule.register({ // Registra el módulo de JWT
-      secret: process.env.JWT_SECRET, // Usa la clave secreta del archivo .env
-      signOptions: { expiresIn: '60s' }, // Define el tiempo de expiración del token
+    JwtModule.register({
+      secret: process.env.JWT_SECRET,
+      signOptions: { expiresIn: '60s' },
     }),
   ],
   controllers: [SmartphonesController],
